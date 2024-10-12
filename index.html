@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiwi con HTML y CSS</title>
+    <style>
+    /* Contenedor del kiwi */
+    .kiwi-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    /* Capa exterior verde del kiwi */
+    .kiwi-outer {
+        width: 200px;
+        height: 200px;
+        background-color: #7ac142;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Parte interior del kiwi (corte) */
+    .kiwi-inner {
+        width: 160px;
+        height: 160px;
+        background-color: #c7de8f;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    /* Centro del kiwi */
+    .kiwi-center {
+        width: 60px;
+        height: 60px;
+        background-color: #f3f1d9;
+        border-radius: 50%;
+        position: relative;
+    }
+    
+    /* Semillas del kiwi */
+    .kiwi-seed {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+    }
+    
+    .seed-1 { top: 10px; left: 20px; }
+    .seed-2 { top: 10px; right: 20px; }
+    .seed-3 { bottom: 10px; left: 20px; }
+    .seed-4 { bottom: 10px; right: 20px; }
+    .seed-5 { top: 45px; left: 5px; }
+    .seed-6 { top: 45px; right: 5px; }
+  </style>
+</head>
+<body>
+    <div class="kiwi-container">
+        <div class="kiwi-outer">
+            <div class="kiwi-inner">
+                <div class="kiwi-center">
+                    <div class="kiwi-seed seed-1"></div>
+                    <div class="kiwi-seed seed-2"></div>
+                    <div class="kiwi-seed seed-3"></div>
+                    <div class="kiwi-seed seed-4"></div>
+                    <div class="kiwi-seed seed-5"></div>
+                    <div class="kiwi-seed seed-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
